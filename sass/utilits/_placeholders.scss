@@ -1,0 +1,31 @@
+%section-title {
+  color: $title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 00.03em;
+}
+
+%button {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+%social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  fill: #afb1b8;
+
+  border-radius: 50%;
+}

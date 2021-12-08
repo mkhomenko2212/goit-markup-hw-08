@@ -1,0 +1,22 @@
+.header__logo {
+  font-family: Raleway, cursive;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header__logo-first,
+.footer__logo-first {
+  color: $accent-color;
+}
+.header__logo-second {
+  color: $title-color;
+}
+
+.footer__logo-second {
+  color: $primary-white-color;
+}

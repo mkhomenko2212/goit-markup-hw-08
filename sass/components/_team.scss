@@ -1,0 +1,120 @@
+.team {
+  background-color: $secondary-background-color;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__title {
+    @extend %section-title;
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 30px;
+    }
+    padding-bottom: 50px;
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      margin: -15px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 0px;
+      width: calc((100% - 4 * 30px) / 4);
+    }
+  }
+
+  &__member {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+
+    text-align: center;
+    padding-top: 30px;
+  }
+  &__position {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.17;
+
+    margin-top: 0px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  &__item {
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+    background-color: $primary-white-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 480px) {
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__box {
+    @media screen and (min-width: 480px) {
+      padding-left: 122px;
+      padding-right: 122px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 74px;
+      padding-right: 74px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  &__social-link {
+    @extend %social-link;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      border-radius: 50%;
+      fill: $primary-white-color;
+    }
+  }
+  &__social-logo {
+    width: 20px;
+    height: 20px;
+  }
+  &__social-list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+  }
+}
