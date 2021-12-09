@@ -21,7 +21,7 @@
   }
 }
 
-.header__mob--button {
+.menu-button {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -33,14 +33,14 @@
   }
 }
 
-.header__close-icon {
+.icon-close {
   display: none;
 }
 
-.header__mob--button.is-open .header__menu-icon {
+.menu-button.js-open-menu .menu-icon {
   display: none;
 }
-.header__mob--button.is-open .header__close-icon {
+.menu-button.js-open-menu .icon-close {
   display: block;
 }
 .header__mob-menu {
@@ -53,6 +53,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: $primary-white-color;
   }
   @media screen and (min-width: 767px) {
     display: flex;

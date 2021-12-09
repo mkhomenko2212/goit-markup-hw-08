@@ -201,7 +201,7 @@ img {
   }
 }
 
-.header__mob--button {
+.menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -212,20 +212,20 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .header__mob--button {
+  .menu-button {
     display: none;
   }
 }
 
-.header__close-icon {
+.icon-close {
   display: none;
 }
 
-.header__mob--button.is-open .header__menu-icon {
+.menu-button.js-open-menu .menu-icon {
   display: none;
 }
 
-.header__mob--button.is-open .header__close-icon {
+.menu-button.js-open-menu .icon-close {
   display: block;
 }
 
@@ -241,6 +241,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
+    background-color: #ffffff;
   }
 }
 
