@@ -290,6 +290,10 @@ img {
           transform: translateX(0);
 }
 
+.menu-icon {
+  fill: red;
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
