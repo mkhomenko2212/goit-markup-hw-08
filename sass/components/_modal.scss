@@ -1,0 +1,89 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  visibility: visible;
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale (1.1);
+}
+.modal {
+  position: absolute;
+  padding: 40px;
+
+  top: 50%;
+  left: 50%;
+
+  align-items: center;
+
+  background-color: $primary-white-color;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 581px;
+    width: 528px;
+  }
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  fill: #000000;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: #eeeeee;
+  }
+}
+
+.button-modal {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background-color: white;
+  padding: 0;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: white;
+  }
+}
+
+.modal-title {
+  color: $title-color;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+}

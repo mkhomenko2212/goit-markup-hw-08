@@ -1,12 +1,19 @@
 .header__logo {
+  display: inline-block;
   font-family: Raleway, cursive;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
 
-  padding-top: 24px;
-  padding-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header__logo-first,
