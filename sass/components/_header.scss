@@ -27,26 +27,36 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header__close-icon {
   display: none;
 }
+
 .header__mob--button.is-open .header__menu-icon {
   display: none;
 }
 .header__mob--button.is-open .header__close-icon {
   display: block;
 }
-
 .header__mob-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
   border: 1px solid red;
+  width: 100%;
 
+  @media screen and (max-width: 767px) {
+    padding: 48px 40px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  @media screen and (min-width: 767px) {
+    display: flex;
+  }
   &.is-open {
     display: block;
   }
