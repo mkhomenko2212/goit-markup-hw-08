@@ -92,6 +92,20 @@
   transform: translateX(0);
 }
 
+.header__menu-wrapper {
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+
+    .mobile-menu & {
+      flex-basis: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+}
 .header__link {
   @media screen and (max-width: 767px) {
     font-weight: 500;
@@ -111,9 +125,6 @@
 .header__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
-    &:last-child {
-      margin-bottom: 302px;
-    }
   }
 }
 
