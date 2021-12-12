@@ -1,0 +1,59 @@
+.filter {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+  &__list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 30px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 50px;
+    }
+  }
+  &__button {
+    @extend %button;
+    border: 1px solid transparent;
+
+    font-weight: 500;
+    background-color: $secondary-background-color;
+    color: $title-color;
+
+    padding: 6px 22px;
+    min-width: 73px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $primary-white-color;
+      background-color: $accent-color;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  &__item + &__item {
+    margin-left: 8px;
+  }
+
+  &__item:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+}
