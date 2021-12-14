@@ -26,37 +26,72 @@
         <a href="./index.html" class="header__logo">
           <span class="header__logo-first">Web</span><span class="header__logo-second">Studio</span>
         </a>
-        <nav>
-          <ul class="header__list list">
-            <li class="header__item">
-              <a href="./index.html" class="header__link link">Студия</a>
+        <button
+          type="button"
+          class="button__menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-icon" href="../images/symbol-defs-6.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button type="button" class="button__menu-close js-close-menu">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-close" href="../images/symbol-defs-6.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="menu-wrapper">
+            <nav class="header__navigation">
+              <ul class="header__list list">
+                <li class="header__item">
+                  <a href="./index.html" class="header__link link">Студия</a>
+                </li>
+                <li class="header__item">
+                  <a href="./portfolio.html" class="header__link header__link--current link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
+              </ul>
+
+              <ul class="header__contact list">
+                <li class="header__adress">
+                  <a href="mailto:info@devstudio.com" class="header__mail">
+                    <svg width="16px" height="12px" class="header__icon">
+                      <use href="./images/symbol-defs-6.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="header__adress">
+                  <a href="tel:+380961111111" class="header__phone">
+                    <svg width="10px" height="16px" class="header__icon">
+                      <use href="./images/symbol-defs-6.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="menu-social list">
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link link">Instagram</a>
             </li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__link header__link--current link"
-                >Портфолио</a
-              >
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link link">Twitter</a>
             </li>
-            <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a href="" class="menu-social__link link">LinkedIn</a>
+            </li>
           </ul>
-        </nav>
-        <ul class="header__contact list">
-          <li class="header__item">
-            <a href="mailto:info@devstudio.com" class="header__adress">
-              <svg width="16px" height="12px" class="header__icon">
-                <use href="./images/symbol-defs-6.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__item">
-            <a href="tel:+380961111111" class="header__adress">
-              <svg width="10px" height="16px" class="header__icon">
-                <use href="./images/symbol-defs-6.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -82,7 +117,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project1.jpg" alt="Люди" width="370" />
+                  <img
+                    srcset="./images/project1-desk-1x.jpg 370w,
+                  ./images/project1-desk-2x.jpg 740w
+                  ./images/project1-tab-1x.jpg 354w
+                  ./images/project1-tab-2x.jpg 708w
+                  ./images/project1-mob-1x.jpg 450w
+                  ./images/project1-mob-2x.jpg 900w"
+                    src="./images/project1-desk-1x.jpg"
+                    alt="Люди"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -98,7 +143,16 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project2.jpg" alt="Постер" width="370" />
+                  <img
+                    srcset="./images/project2-desk-1x.jpg 370w,
+                  ./images/project2-desk-2x.jpg 740w
+                  ./images/project2-tab-1x.jpg 354w
+                  ./images/project2-tab-2x.jpg 708w
+                  ./images/project2-mob-1x.jpg 450w
+                  ./images/project2-mob-2x.jpg 900w"
+                    src="./images/project2-desk-1x.jpg"
+                    alt="Постер"
+                  />
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -114,7 +168,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project3.jpg" alt="Ресторан" width="370" />
+                  <img
+                    srcset="./images/project3-desk-1x.jpg 370w,
+                  ./images/project3-desk-2x.jpg 740w
+                  ./images/project3-tab-1x.jpg 354w
+                  ./images/project3-tab-2x.jpg 708w
+                  ./images/project3-mob-1x.jpg 450w
+                  ./images/project3-mob-2x.jpg 900w"
+                    src="./images/project3-desk-1x.jpg"
+                    alt="Ресторан"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -130,7 +194,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project4.jpg" alt="Наушники" width="370" />
+                  <img
+                    srcset="./images/project2-desk-1x.jpg 370w,
+                  ./images/project4-desk-2x.jpg 740w
+                  ./images/project4-tab-1x.jpg 354w
+                  ./images/project4-tab-2x.jpg 708w
+                  ./images/project4-mob-1x.jpg 450w
+                  ./images/project4-mob-2x.jpg 900w"
+                    src="./images/project4-desk-1x.jpg"
+                    alt="Наушники"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -146,7 +220,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project5.jpg" alt="Коробки" width="370" />
+                  <img
+                    srcset="./images/project5-desk-1x.jpg 370w,
+                  ./images/project5-desk-2x.jpg 740w
+                  ./images/project5-tab-1x.jpg 354w
+                  ./images/project5-tab-2x.jpg 708w
+                  ./images/project5-mob-1x.jpg 450w
+                  ./images/project5-mob-2x.jpg 900w"
+                    src="./images/project5-desk-1x.jpg"
+                    alt="Коробки"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -162,7 +246,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project6.jpg" alt="Монитор" width="370" />
+                  <img
+                    srcset="./images/project6-desk-1x.jpg 370w,
+                  ./images/project6-desk-2x.jpg 740w
+                  ./images/project6-tab-1x.jpg 354w
+                  ./images/project6-tab-2x.jpg 708w
+                  ./images/project6-mob-1x.jpg 450w
+                  ./images/project6-mob-2x.jpg 900w"
+                    src="./images/project6-desk-1x.jpg"
+                    alt="Постер"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -178,7 +272,16 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project7.jpg" alt="Издание" width="370" />
+                  <img
+                    srcset="./images/project7-desk-1x.jpg 370w,
+                  ./images/project7-desk-2x.jpg 740w
+                  ./images/project7-tab-1x.jpg 354w
+                  ./images/project7-tab-2x.jpg 708w
+                  ./images/project7-mob-1x.jpg 450w
+                  ./images/project7-mob-2x.jpg 900w"
+                    src="./images/project7-desk-1x.jpg"
+                    alt="Издание"
+                  />
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -194,7 +297,16 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project8.jpg" alt="Значок" width="370" />
+                  <img
+                    srcset="./images/project8-desk-1x.jpg 370w,
+                  ./images/project8-desk-2x.jpg 740w
+                  ./images/project8-tab-1x.jpg 354w
+                  ./images/project8-tab-2x.jpg 708w
+                  ./images/project8-mob-1x.jpg 450w
+                  ./images/project8-mob-2x.jpg 900w"
+                    src="./images/project8-desk-1x.jpg"
+                    alt="Значок"
+                  />
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -210,7 +322,17 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__image">
-                  <img src="./images/Project9.jpg" alt="Ноут" width="370" />
+                  <img
+                    srcset="./images/project9-desk-1x.jpg 370w,
+                  ./images/project9-desk-2x.jpg 740w
+                  ./images/project9-tab-1x.jpg 354w
+                  ./images/project9-tab-2x.jpg 708w
+                  ./images/project9-mob-1x.jpg 450w
+                  ./images/project9-mob-2x.jpg 900w"
+                    src="./images/project9-desk-1x.jpg"
+                    alt="Ноут"
+                  />
+
                   <p class="project__thumb">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -319,5 +441,12 @@
         </form>
       </div>
     </footer>
+    <script defer src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
