@@ -22,21 +22,23 @@
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <div class="header__nav container">
-        <a href="./index.html" class="header__logo">
-          <span class="header__logo-first">Web</span><span class="header__logo-second">Studio</span>
-        </a>
-        <button
-          type="button"
-          class="button__menu-open js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="menu-icon" href="./images/symbol-defs-6.svg#icon-menu_40px"></use>
-          </svg>
-        </button>
-
+      <div class="container container-header">
+        <div class="header__nav">
+          <a href="./index.html" class="header__logo">
+            <span class="header__logo-first">Web</span
+            ><span class="header__logo-second">Studio</span>
+          </a>
+          <button
+            type="button"
+            class="button__menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-icon" href="./images/symbol-defs-6.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        </div>
         <div class="mobile-menu js-menu-container" id="mobile-menu">
           <button type="button" class="button__menu-close js-close-menu">
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -56,11 +58,12 @@
                 </li>
                 <li class="header__item"><a href="" class="header__link link">Контакты</a></li>
               </ul>
-
-              <ul class="header__contact list">
+            </nav>
+            <div class="header__contacts">
+              <ul class="header__contact-list list">
                 <li class="header__adress">
                   <a href="mailto:info@devstudio.com" class="header__mail">
-                    <svg width="16px" height="12px" class="header__icon">
+                    <svg class="header__icon header__icon--mail">
                       <use href="./images/symbol-defs-6.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
@@ -68,29 +71,30 @@
                 </li>
                 <li class="header__adress">
                   <a href="tel:+380961111111" class="header__phone">
-                    <svg width="10px" height="16px" class="header__icon">
+                    <svg class="header__icon header__icon--phone">
                       <use href="./images/symbol-defs-6.svg#icon-smartphone"></use>
                     </svg>
                     +38 096 111 11 11
                   </a>
                 </li>
               </ul>
-            </nav>
+
+              <ul class="menu-social list">
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link link">Instagram</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link link">Twitter</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link link">Facebook</a>
+                </li>
+                <li class="menu-social__item">
+                  <a href="" class="menu-social__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <ul class="menu-social list">
-            <li class="menu-social__item">
-              <a href="" class="menu-social__link link">Instagram</a>
-            </li>
-            <li class="menu-social__item">
-              <a href="" class="menu-social__link link">Twitter</a>
-            </li>
-            <li class="menu-social__item">
-              <a href="" class="menu-social__link link">Facebook</a>
-            </li>
-            <li class="menu-social__item">
-              <a href="" class="menu-social__link link">LinkedIn</a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
