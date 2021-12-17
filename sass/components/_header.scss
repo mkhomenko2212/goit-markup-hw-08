@@ -98,11 +98,6 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
   &__mail,
   &__phone {
     text-decoration: none;
@@ -122,6 +117,9 @@
       font-size: 24px;
     }
     @media screen and (min-width: 768px) {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
       font-size: 12px;
     }
     @media screen and (min-width: 1200px) {
@@ -151,6 +149,9 @@
       padding-top: 10px;
     }
     @media screen and (min-width: 768px) {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
       font-size: 12px;
     }
     @media screen and (min-width: 1200px) {
@@ -193,7 +194,7 @@
   }
   &__contacts {
     @media screen and (min-width: 768px) {
-      margin-left: 84px;
+      margin-left: 83px;
     }
     @media screen and (min-width: 1200px) {
       margin-left: 293px;

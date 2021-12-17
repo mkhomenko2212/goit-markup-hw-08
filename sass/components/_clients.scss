@@ -13,6 +13,8 @@
     text-align: center;
 
     @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      line-height: 1.18;
       margin-bottom: 30px;
     }
     @media screen and (min-width: 1200px) {
@@ -20,7 +22,11 @@
     }
   }
   &__link {
-    @extend %social-link;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+
     border: 1px solid #afb1b8;
     border-radius: 4px;
     justify-content: center;
@@ -65,10 +71,8 @@
   }
 
   &__item {
-    @media screen and (min-width: 480px) {
-      margin: 15px;
-      width: calc((100% - 2 * 30px) / 2);
-    }
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
 
     @media screen and (min-width: 768px) {
       margin: 15px;

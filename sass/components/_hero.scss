@@ -50,10 +50,8 @@
   background-color: var(--footer-color);
   background-position: center;
 
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -67,11 +65,8 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-
-    @media screen and (min-width: 480px) {
-      font-size: 26px;
-      line-height: 1.61;
-    }
+    font-size: 26px;
+    line-height: 1.61;
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;

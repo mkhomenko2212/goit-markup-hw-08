@@ -44,9 +44,11 @@
   }
   &__adress {
     display: inline-block;
-    color: $primary-white-color;
+    color: $primary-text-color;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    left: 00.03em;
     text-decoration: none;
 
     font-style: normal;
@@ -59,7 +61,7 @@
   }
 
   &__map {
-    color: rgba(255, 255, 255, 0.6);
+    color: $primary-white-color;
     &:focus,
     &:hover {
       color: $accent-color;
@@ -80,9 +82,8 @@
     }
   }
   &__social {
-    @media screen and (min-width: 480px) {
-      margin-top: 60px;
-    }
+    margin-top: 60px;
+
     @media screen and (min-width: 768px) {
       margin-top: 0px;
     }
