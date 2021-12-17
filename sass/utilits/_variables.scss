@@ -7,11 +7,10 @@ $primary-white-color: #ffffff;
 $secondary-background-color: #f5f4fa;
 
 .body {
+  font-family: Roboto, sans-serif;
   color: $primary-text-color;
   background-color: $primary-background-color;
-  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-
   margin: 0;
 }
 *,
@@ -19,21 +18,8 @@ $secondary-background-color: #f5f4fa;
 *::after {
   box-sizing: border-box;
 }
-.section {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   min-width: 200px;
@@ -52,6 +38,20 @@ $secondary-background-color: #f5f4fa;
     width: 1200px;
   }
 }
+.section {
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Утилиты */
 h1,
 h2,
